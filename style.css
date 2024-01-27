@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+}
+
+body {
+  background-color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table-box {
+  display: none;
+}
+
+.form-group {
+  background-color: rgb(255, 255, 255);
+  width: 55vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 10px;
+  align-items: end;
+}
+
+.Inpbox {
+  width: 48%;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.gender div {
+  margin: 20px;
+}
+
+.fooditem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.fooditem div {
+  margin: 20px;
+}
+
+button {
+  width: 100px;
+  padding: 8px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: rgb(0, 128, 240);
+  color: white;
+}
+
+/* table */
+.table-box {
+  margin: 20px;
+}
+
+table,
+th,
+td,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+@media screen and (max-width: 830px) {
+  .gender {
+    display: block;
+  }
+
+  .fooditem {
+    display: block;
+  }
+
+  .Inpbox {
+    width: 90%;
+  }
+}
